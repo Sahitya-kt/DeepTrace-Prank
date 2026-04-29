@@ -1,0 +1,37 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+}
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.terminal-overlay {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    font-size: 1.1rem;
+    /* Mobile par sahi dikhega */
+    height: 100vh;
+    overflow-y: auto;
+    /* Isse scroll chalega */
+    scroll-behavior: smooth;
+}
+
+#click-hint {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 20;
+}
